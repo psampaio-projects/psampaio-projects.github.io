@@ -2,43 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CUPLIDE Update and Downloads</title>
-  <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 2rem; line-height: 1.5; color: #263238; }
-    main { max-width: 900px; margin: 0 auto; }
-    h1 { color: #155799; }
-    a { color: #1e6bb8; }
-    code { background: #f3f6fa; padding: 0.1rem 0.25rem; border-radius: 0.25rem; }
-    .card { border: 1px solid #dce6f0; border-radius: 0.5rem; padding: 1rem; margin: 1rem 0; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PS Projects</title>
+  <meta name="description" content="Educational tools for Digital Systems, Computer Architecture and Embedded Systems.">
+  <link rel="stylesheet" href="stylesheets/stylesheet.css">
 </head>
 <body>
-<main>
-  <h1>CUPLIDE / CuplSDK</h1>
-  <p>Static site migrated from Bitbucket Pages to GitHub Pages.</p>
 
-  <div class="card">
-    <h2>CuplSDK</h2>
-    <p><a href="CuplSDK/">Open CuplSDK page</a></p>
-    <p>Update site: <code>CuplSDK/update/</code></p>
-  </div>
+  <header class="site-header">
+    <div class="header-content">
+      <h1>PS Projects</h1>
+      <p>Educational tools for Digital Systems, Computer Architecture and Embedded Systems</p>
+      <p class="subtitle">Supporting Computer Engineering education</p>
+    </div>
+  </header>
 
-  <div class="card">
-    <h2>Version files</h2>
-    <ul>
-      <li><a href="Logisim/version.xml">Logisim version.xml</a></li>
-      <li><a href="p16-simulator/version.xml">p16-simulator version.xml</a></li>
-    </ul>
-  </div>
+  <main class="container">
+    <section class="intro">
+      <h2>Projects</h2>
+      <p>
+        This page gathers software, tools and educational resources developed to support
+        teaching in digital systems, computer architecture, programmable logic and embedded systems.
+      </p>
+    </section>
 
-  <div class="card">
-    <h2>Tools</h2>
-    <ul>
-      <li><a href="CuplSDK/tools/CPLDProg%20Setup.msi">CPLDProg Setup.msi</a></li>
-      <li><a href="CuplSDK/tools/cupl.msi">cupl.msi</a> — publish only if you have redistribution rights.</li>
-    </ul>
-  </div>
-</main>
+    <section class="projects">
+
+      <article class="project featured">
+        <h3>P16 SDK</h3>
+        <p>
+          Development SDK for the <strong>P16 architecture</strong>, including assembler,
+          toolchain, debugger integration and development tools designed for teaching
+          computer architecture and assembly programming.
+        </p>
+        <a class="btn disabled" href="#">Coming Soon</a>
+      </article>
+
+      <article class="project">
+        <h3>Logisim Branch for ISEL LEETC</h3>
+        <p>
+          Adapted version of Logisim used in the LEETC course at ISEL for digital logic
+          simulation and educational use.
+        </p>
+        <a class="btn" href="https://sourceforge.net/projects/logisim-ps/" target="_blank" rel="noopener noreferrer">View Project</a>
+      </article>
+
+      <article class="project">
+        <h3>CUPL IDE</h3>
+        <p>
+          Integrated development environment for CUPL programming and PLD development,
+          designed to support digital systems education.
+        </p>
+        <a class="btn" href="https://sourceforge.net/projects/cupl-ide/" target="_blank" rel="noopener noreferrer">View Project</a>
+        <a class="btn secondary" href="CuplSDK/">CuplSDK Page</a>
+      </article>
+
+      <article class="project">
+        <h3>eCUP CPLD USB Programmer</h3>
+        <p>
+          USB programmer for CPLD devices designed to support teaching programmable logic
+          and digital hardware development.
+        </p>
+        <a class="btn" href="https://sourceforge.net/projects/ecup/" target="_blank" rel="noopener noreferrer">View Project</a>
+      </article>
+
+      <article class="project">
+        <h3>VSCode Extension for P16</h3>
+        <p>
+          Visual Studio Code extension providing syntax highlighting, debugging support
+          and integration with the P16 development environment.
+        </p>
+        <a class="btn" href="https://bitbucket.org/ps-projects/p16-debugger" target="_blank" rel="noopener noreferrer">View Project</a>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Pedro Sampaio — Educational tools for Computer Engineering</p>
+  </footer>
+
 </body>
 </html>
