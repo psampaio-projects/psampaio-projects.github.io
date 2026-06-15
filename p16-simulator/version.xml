@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<p16-simulator>
+  <version>1.0.5</version>
+  <changelog>
+  Add support for PAAC board peripheral.
+  </changelog>
+</p16-simulator>

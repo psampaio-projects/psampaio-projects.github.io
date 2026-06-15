@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>CUPLIDE / CuplSDK</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    </head>
+    <body>
+        <section class="page-header">
+            <h1 class="project-name">CUPLIDE / CuplSDK</h1>
+            <h2 class="project-tagline">Cupl for Atmel PLD (ATF22V10, ATF750) and CPLD (ATF15xx) Plug-in for Eclipse</h2>
+            <a href="https://github.com/TEU_USER/TEU_REPO/releases/latest" class="btn">Download CuplIDE</a>
+            <a href="tools/CPLDProg%20Setup.msi" class="btn">Download CPLDProg v1.2</a>
+            <!-- <a href="tools/cupl.msi" class="btn">Download Atmel CUPL v5.0</a> -->
+            <a href="http://www.atmel.com/tools/WINCUPL.aspx" class="btn">Download Atmel WinCUPL</a>
+      <!--
+      <a href="https://github.com/psembedded/CuplSDK" class="btn">View on GitHub</a>
+      <a href="https://github.com/psembedded/CuplSDK/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/psembedded/CuplSDK/tarball/master" class="btn">Download .tar.gz</a>
+      -->
+        </section>
+
+    <section class="main-content">
+<h3>
+  <a id="cuplide" class="anchor" href="#cuplide" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CuplIDE
+</h3>
+
+<p>The CuplIDE eclipse product provides Cupl functionality from within eclipse workbench.</p>
+
+<p>Download <a href="https://github.com/TEU_USER/TEU_REPO/releases/latest" class="btn-default">CuplIDE</a> Unzip and run.</p>
+<p><b>Note:</b> Use <a href="https://www.7-zip.org" class="btn-default">7-Zip</a> to unzip the file. Native Windows 10, same times give a "Unknown Publisher" warning.</p>
+
+<h3>
+  <a id="cuplsdk-plugin" class="anchor" href="#cuplsdk-plugin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CuplSDK eclipse plugin
+</h3>
+
+
+<p>The CuplSDK eclipse plugin provides Cupl functionality from within eclipse. Apart from "standard" Cupl functionality, the eclipse plugin contains a Cupl project nature and also adds a new Cupl perspective.The plugin makes use of the all core functionalities of the WinCupl.</p>
+
+<h3>
+    <a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
+    Requirements
+  </h3>
+  
+  <p><a href="https://www.eclipse.org/downloads/">Eclipse IDE</a>. Browse the list of packages, looking for ‘Eclipse IDE for Java Developers’ and install.</p>
+
+  <p><a href="http://www.atmel.com/tools/WINCUPL.aspx">Atmel WinCUPL</a> must be installed.</p>
+  <h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing CuplSDK Eclipse Plugin</h3>
+
+<!-- <p>An eclipse update site is now available at <a href="http://psembedded.github.io/CuplSDK/update/">http://psembedded.github.io/CuplSDK/update</a>.</p>
+
+<p>Install the CuplSDK eclipseplugin with the following steps:</p> -->
+
+<p>1. Select <em>Help </em>&gt; <em>Install New Software...</em></p>
+
+<p>2. In the <em>Work with</em> field, type https://TEU_USER.github.io/TEU_REPO/CuplSDK/update/ and click <em>Add...</em></p>
+
+<p>3. Select Cupl</p>
+
+<!--<p><img alt="entering the SoapUI update site in eclipse" src="/soapui/media/images/stories/eclipse/new_update_site.gif" /></p>-->
+
+<p>4. Check the CuplSDK Feature checkbox and click <em>Next</em>. Then follow the dialogs to install the CuplSDK feature. Also, trust us and accept the unsigned plugin</p>
+
+<p>5. Restart Eclipse. The installation is now complete</p>
+
+<h3>
+<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The CuplSDK Perspective</h3>
+
+<p>Once installed, open the CuplSDK Perspective by using the standard Window/Open Perspective/Other... Command and selecting &quot;Cupl&quot; from the list. The perspective will open 3 views:</p>
+
+<p>* A &quot;CuplSDK Layout&quot; view to the left containing device layout</p>
+
+<p>* A &quot;CuplSDK Symbols&quot; view to the bottom containing symbols of the generated file.</p>
+
+<!--<p><img alt="the SoapUI navigator in eclipse" src="/soapui/media/images/stories/eclipse/show_view.gif" /></p>-->
+
+<h3>
+<a id="creating-projects" class="anchor" href="#creating-projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The CuplSDK Project Wizard</h3>
+
+<p>Once installed, create a Cupl project by using the standard File/New/Project... Command and selecting &quot;Cupl&quot; from the list. The wizard allows creating 3 templates project:</p>
+
+<p>* A &quot;ATF22V10&quot; project based</p>
+<p>* A &quot;ATF750C&quot; project based</p>
+
+<p>* A &quot;ATF15xx&quot; project based</p>
+
+
+<!--
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+-->
+
+<!-- <p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p> -->
+<!-- 
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/psembedded/CuplSDK">CuplSDK</a> is maintained by <a href="https://github.com/psembedded">psembedded</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer> -->
+
+    </section>
+
+  
+  </body>
+</html>
