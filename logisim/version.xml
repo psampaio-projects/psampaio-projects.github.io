@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<logisim>
+  <version>2.8.0</version>
+  <changelog>
+* Updated Java runtime to Java 21.
+* Fixed graphical issues.
+* Fixed an incorrect CPLD pin mapping for pin 7. 
+  </changelog>
+</logisim>
